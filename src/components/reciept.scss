@@ -1,0 +1,81 @@
+.cont{
+    width: 100vw;
+    padding: 40px 0;
+    .main{
+        width: 40vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        // align-items: center;
+        border: 1px solid;
+        border-radius: 16px;
+        box-shadow:  1px 4px 5px rgb(176, 115, 115);
+        h1{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .about{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .l{
+                width: 60%;
+                background-color: azure;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                h2{
+                    text-align: center;
+                }
+                .h{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    padding-right: 10px;
+                }
+                .n{
+                    font-weight: bold;
+                }
+            }
+            .r{
+                width: 40%;
+                background-color: #ddf1dd;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-top-left-radius: 25px;
+                h3{
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                img{
+                    width: 90%;
+                    height: 80%;
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            padding: 20px;
+            p{
+                color: black;
+                font-size: 1.05rem;
+            }
+            .b{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-size: .8rem;
+                .ta{
+                    text-align: right;
+                    color: #32cd32;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

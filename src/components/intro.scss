@@ -1,0 +1,139 @@
+.intro{
+  width: 100vw;
+  .con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vw;
+    .title{
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+  }
+  .lr{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+    .left{
+      width: 70vw;
+      // background-color: azure;
+      display: flex;
+      flex-direction: column;
+      .lcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+          margin-top: 20px;
+          width: 50vw;
+          height: 70vh;
+          border-radius: 8px;
+        }
+      }
+      .tabver{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding-top: 40px;
+        height: 20vw;
+        .menu{
+          width: 15vw;
+          // background-color: beige;
+          border: 2px solid black;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .content{
+          width: 40vw;
+          // background-color: bisque;
+          padding: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+    .right{
+      width: 30vw;
+      padding: 40px;
+      background-color: rgb(59, 218, 59);
+      border-radius: 20px;
+      margin-bottom: 50px;
+      border: 2px solid;
+      .rcon{
+        width: 25vw;
+        // background-color: beige;
+        display: flex;
+        flex-direction: column;
+        // text-align: center;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 20vw;
+          border-radius: 10px;
+        }
+        span{
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        .name{
+          margin-top: 10px;
+          font-size: 1rem;
+        }
+        .button{
+          margin-top: 20px;
+          padding: 10px 30px;
+          background-color: green;
+          border: 2px solid black;
+          border-radius: 10px;
+          font-size: 1.2rem;
+          color: white;
+        }
+        .button:hover{
+          background-color: rgb(7, 86, 0);
+        }
+      }
+      .donor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .dtitle{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: bold;
+          font-size: 1.2rem;
+          // background-color: aliceblue;
+          
+          }
+          .donorlist{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            .dlist{
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+        }
+      }
+    }
+  }
+}
+
+.carousel-container {
+  max-width: 800px; /* set the maximum width of the carousel container */
+  margin: 0 auto; /* center the carousel container */
+}
+
+.carousel {
+  max-width: 600px; /* set the maximum width of the carousel */
+  margin: 0 auto; /* center the carousel */
+}
