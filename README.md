@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# AgroSeva App
+Release apk :  https://github.com/RahulSoni0/AgroSeva/blob/main/app-release.apk
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Gfg | Solve for India - Hackathon | NIT JAMSHEDPUR
 
-## Available Scripts
+Team leader :- Rahul Kumar soni 
+<br>
+Member : Nitish Kumar Panchal
+<br>
+Member : Suraj Burnwal
+<br>
+Member : Aditya Gupta
+<br>
 
-In the project directory, you can run:
+Website Link : 
+http://34.131.16.236/
 
-### `npm start`
+repo for app code : https://github.com/RahulSoni0/AgroSeva
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👨🏽‍💻  Tech 
+- App side
+- Implemented Firebase Auth ui for phone , email and google Authentication and Authorization.
+- Used Firebase as Backend Service ( GCP ).
+- Implemented Campaign Creation , View and Donate other Campaign
+- Created Market Place for selling / Borrowing and buying Products Related to Agriculture.
+- Used Material 3 UI
 
-### `npm test`
+- Website
+- React.js , Node.js , Firebase and Local storage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots 
 
-### `npm run build`
+#  	AgroSeva App 
+![1](https://user-images.githubusercontent.com/75351409/232334515-ddf7b200-26db-4a87-beeb-1b4bfa456e76.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![2](https://user-images.githubusercontent.com/75351409/232334555-455e525c-9218-44fc-b26f-10a3dee57bc0.png)
+![3](https://user-images.githubusercontent.com/75351409/232334559-80ace0ab-a23e-4039-83b5-48147a567d8d.png)
+![4](https://user-images.githubusercontent.com/75351409/232334561-a7825e82-123d-426c-9354-891032711d91.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![5](https://user-images.githubusercontent.com/75351409/232418137-38d9e167-3790-49a4-9eaa-fa77dc499e8c.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![6](https://user-images.githubusercontent.com/75351409/232334566-9d9cc2ca-7a99-4f3d-b159-12801e940d37.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![7](https://user-images.githubusercontent.com/75351409/232334568-cd70e2bb-07dc-46e9-9d05-d7a501bf4927.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![8](https://user-images.githubusercontent.com/75351409/232418492-b80effc8-7fad-48d2-8698-2dd2f02798bc.png)
 
-## Learn More
+![8](https://user-images.githubusercontent.com/75351409/232334572-26431479-59d0-40ef-a31c-4c89ede387cc.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![9](https://user-images.githubusercontent.com/75351409/232334575-0f7ff166-1109-4f81-a719-38bb326e21cd.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demo
+https://youtu.be/BwFevEviSmU# AgroSeva App
+Release apk :  https://github.com/RahulSoni0/AgroSeva/blob/main/app-release.apk
 
-### Code Splitting
+### Gfg | Solve for India - Hackathon | NIT JAMSHEDPUR
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Team leader :- Rahul Kumar soni 
+<br>
+Member : Nitish Kumar Panchal
+<br>
+Member : Suraj Burnwal
+<br>
+Member : Aditya Gupta
+<br>
 
-### Analyzing the Bundle Size
+Website Link : 
+http://34.131.16.236/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+repo for website code : https://github.com/nitishkrpanchal987/agroSeva
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 👨🏽‍💻  Tech 
+- App side
+- Implemented Firebase Auth ui for phone , email and google Authentication and Authorization.
+- Used Firebase as Backend Service ( GCP ).
+- Implemented Campaign Creation , View and Donate other Campaign
+- Created Market Place for selling / Borrowing and buying Products Related to Agriculture.
+- Used Material 3 UI
 
-### Advanced Configuration
+- Website
+- React.js , Node.js , Firebase and Local storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots 
 
-### Deployment
+#  	AgroSeva App 
+![1](https://user-images.githubusercontent.com/75351409/232334515-ddf7b200-26db-4a87-beeb-1b4bfa456e76.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![2](https://user-images.githubusercontent.com/75351409/232334555-455e525c-9218-44fc-b26f-10a3dee57bc0.png)
+![3](https://user-images.githubusercontent.com/75351409/232334559-80ace0ab-a23e-4039-83b5-48147a567d8d.png)
+![4](https://user-images.githubusercontent.com/75351409/232334561-a7825e82-123d-426c-9354-891032711d91.png)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![5](https://user-images.githubusercontent.com/75351409/232418137-38d9e167-3790-49a4-9eaa-fa77dc499e8c.png)
+
+
+![6](https://user-images.githubusercontent.com/75351409/232334566-9d9cc2ca-7a99-4f3d-b159-12801e940d37.png)
+
+
+![7](https://user-images.githubusercontent.com/75351409/232334568-cd70e2bb-07dc-46e9-9d05-d7a501bf4927.png)
+
+![8](https://user-images.githubusercontent.com/75351409/232418492-b80effc8-7fad-48d2-8698-2dd2f02798bc.png)
+
+![8](https://user-images.githubusercontent.com/75351409/232334572-26431479-59d0-40ef-a31c-4c89ede387cc.png)
+
+![9](https://user-images.githubusercontent.com/75351409/232334575-0f7ff166-1109-4f81-a719-38bb326e21cd.png)
+
+## Demo
+https://youtu.be/BwFevEviSmU
