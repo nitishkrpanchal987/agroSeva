@@ -5,13 +5,13 @@ import 'firebase/storage';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: "AIzaSyBnuS-zZdPhVAl5HzCFbA1S5z6t2PqEeUI",
   authDomain: "agroseva-4fdc8.firebaseapp.com",
   databaseURL: "https://agroseva-4fdc8-default-rtdb.firebaseio.com",
   projectId: "agroseva-4fdc8",
   storageBucket: "agroseva-4fdc8.appspot.com",
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
+  messagingSenderId: "472446389447",
+  appId: "1:472446389447:web:59e7eda4d49434c437c2e2",
   measurementId: "G-DLGQMVBWWM"
 };
 
