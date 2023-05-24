@@ -11,6 +11,7 @@ const Reciept = () => {
     const doc = JSON.parse(localStorage.getItem('obj'));
     // console.log(doc);
     const rname = doc['contact'].name;
+    const title = doc.campaign_title;
 
     var today = new Date();
     const date = today.getDate();
@@ -25,7 +26,7 @@ const Reciept = () => {
             
             <div className="about">
                 <div className="l">
-                    <h2>Dragon Fruit</h2>
+                    <h2>{title}</h2>
                     <div className="n">
                         <span className='h'>Name:</span>
                         <span className="n">{name}</span>

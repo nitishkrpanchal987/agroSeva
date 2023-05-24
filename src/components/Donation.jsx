@@ -1,6 +1,11 @@
 import React from 'react'
 import './donation.scss'
 import { Link } from 'react-router-dom'
+import w1 from "../media/w1.jpeg"
+import w2 from "../media/w2.jpeg"
+import w3 from "../media/w3.jpeg"
+import w4 from "../media/w4.jpeg"
+
 
 const Donation = () => {
     return (
@@ -13,7 +18,13 @@ const Donation = () => {
                     <h2>Demonstration</h2>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/BwFevEviSmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <p className="desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptas inventore iure perspiciatis placeat soluta rem optio. Culpa aperiam neque assumenda ipsum recusandae dignissimos aliquid aut illo impedit laboriosam excepturi fugit esse cumque alias ipsa, officiis commodi corporis! Laboriosam facere nihil ducimus maxime sed sit amet odit, sapiente tenetur distinctio?
+                        Join the community of farmers and donors on AgroSeva, where
+
+                        you can easily connect, fund, and demand products, while also
+
+                        buying or renting equipment and stocking up on livestock
+
+                        essentials at the best prices.
                     </p>
                 </div>
                 <div className="right">
@@ -22,19 +33,19 @@ const Donation = () => {
                     <Link to="https://github.com/RahulSoni0/AgroSeva/blob/main/app-release.apk" target='_blank'><button>Download Now</button></Link>
                 </div>
             </div>
-            <h1 style={{marginTop:'30px', marginLeft:'5vw'}}>ScreenShots</h1>
+            <h1 style={{ marginTop: '30px', marginLeft: '5vw' }}>ScreenShots</h1>
             <div className="images">
                 <div className="image">
-                    <img src="" alt="" />
+                    <img src={w1} alt="" />
                 </div>
                 <div className="image">
-                    <img src="" alt="" />
+                    <img src={w2} alt="" />
                 </div>
                 <div className="image">
-                    <img src="" alt="" />
+                    <img src={w3} alt="" />
                 </div>
                 <div className="image">
-                    <img src="" alt="" />
+                    <img src={w4} alt="" />
                 </div>
             </div>
         </div>

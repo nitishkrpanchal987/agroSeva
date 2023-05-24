@@ -45,7 +45,6 @@ const Form = (props) => {
         const value = e.target.value;
         // console.log(name, value)
         setuserreg({ ...userreg, [name]: value })
-        // console.log(userreg)
     }
     // const temp = {
     //     amount: userreg.amount,
@@ -114,7 +113,7 @@ const Form = (props) => {
             }
         }
         ans['donors'].push(temp);
-        const uid = ans.doc_id;
+        const uid = ans.uid;
         const docRef = db.collection('campaigns').doc(uid);
 
         // update
@@ -167,7 +166,7 @@ const Form = (props) => {
 
                 <div class="form-group">
                     <label for="mobile">Mobile Number:</label>
-                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required value={userreg.mobile} onChange={handelinput} />
+                    <input type="tel" id="mobile" name="mobile" required value={userreg.mobile} onChange={handelinput} />
                 </div>
 
 

@@ -12,6 +12,32 @@ const Home = () => {
   const [alldocs, setdocs] = useState([]);
   const [farmer, setfarmer] = useState([]);
   const [donor, setdonor] = useState([]);
+  const [amount, setamount] = useState(0);
+  const [farmercount, setfarmercount] = useState(0);
+  const [doncount, setdoncount] = useState(0);
+
+  const cal = ()=>{
+    let tempamount = 0;
+    let tempcount = 0;
+
+    alldocs.forEach((ele)=>{
+        ele['donors'].forEach((element)=>{
+            tempamount += Number(element.amount)
+            tempcount++;
+        });
+    })
+    setamount(tempamount);
+    setfarmercount(alldocs.length);
+    setdoncount(tempcount);
+}
+
+console.log(amount);
+
+useEffect(()=>{
+    cal();
+},[alldocs]);
+
+
   useEffect(() => {
     const temp = []
     db.collection("campaigns").get()
@@ -29,7 +55,7 @@ const Home = () => {
         console.log("Error getting document:", error);
       });
   }, [])
-
+  // console.log(alldocs);
   useEffect(() => {
     const temp = []
     db.collection("farmer_exp").get()
@@ -81,7 +107,7 @@ const Home = () => {
     const alltemp = temp;
     localStorage.setItem("obj", JSON.stringify(alltemp));
   }
-  console.log((farmer));
+  // console.log((farmer));
 
   return (
     <>
@@ -92,16 +118,16 @@ const Home = () => {
       <ScrollTrigger onEnter={() => { setConteron(true) }}>
         <div className="count">
           <div className="b b1">
-            <span className='num'>{counterOn && <CountUp start={0} end={3000} duration={3} />}</span>
-            <span style={{fontWeight:'bold'}}>Total farmer</span>
+            <span className='num'>{counterOn && <CountUp start={0} end={farmercount} duration={3} />}</span>
+            <span style={{ fontWeight: 'bold' }}>Total farmer</span>
           </div>
           <div className="b b2">
-            <span className='num'>{counterOn && <CountUp start={0} end={999} duration={3} />}</span>
-            <span style={{fontWeight:'bold'}}>Seva count</span>
+            <span className='num'>{counterOn && <CountUp start={0} end={doncount} duration={3} />}</span>
+            <span style={{ fontWeight: 'bold' }}>Seva count</span>
           </div>
           <div className="b b3">
-            <span className='num'><i class="fa-solid fa-rupee-sign"></i>  {counterOn && <CountUp start={0} end={50000} duration={3} />}</span>
-            <span style={{fontWeight:'bold'}}>Fund raised</span>
+            <span className='num'><i class="fa-solid fa-rupee-sign"></i>  {counterOn && <CountUp start={0} end={amount} duration={3} />}</span>
+            <span style={{ fontWeight: 'bold' }}>Fund raised</span>
           </div>
         </div>
       </ScrollTrigger>
@@ -133,7 +159,7 @@ const Home = () => {
       </Carousel>
       <div className="division">
         <div className="left">
-          <span className="title" style={{fontWeight:'bold', fontSize:'2rem', textDecoration:'underline'}}>Feature project</span>
+          <span className="title" style={{ fontWeight: 'bold', fontSize: '2rem', textDecoration: 'underline' }}>Feature project</span>
           <img src="https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052__480.jpg" alt="" />
           <span className='lefttitle'> The rabi crop</span>
           <span className="ldesc">Rabi Crops are harvested in the spring season while it is sown in winter. The rabi crops are sown around mid-November, preferably after the monsoon rains are over, and harvesting begins in April / May. The crops are grown either with rainwater that has percolated into the ground or using irrigation. A good rain in winter spoils the rabi crops but is good for Kharif crops.
@@ -142,21 +168,16 @@ const Home = () => {
 
 
         <div className="right">
-          <span className="title" style={{fontWeight:'bold', fontSize:'1.2rem'}}>recommend for you</span>
-          {alldocs.map((item) => (
+          <span className="title" style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>recommend for you</span>
+          {alldocs?.map((item) => (
             <>
               <Link to="/blog" onClick={createClickHandler(item)}>
                 <div className="offer">
-                  <img src={item.campaign_image_url} alt="" />
+                  <img src={item?.campaign_image_url} alt="" />
                   <div className="offercon">
-                    <span className='crop'>{item.campaign_title}</span>
+                    <span className='crop'>{item?.campaign_title}</span>
                     <span className='fund' style={{ color: "green" }}>100% funded</span>
-                    <span className='funder'>{item['contact'].name}</span>
-                    {/* <div className="icons">
-              <i class="fa-solid fa-thumbs-up like"></i>
-              <i class="fa-solid fa-thumbs-down dislike"></i>
-              <i class="fa-solid fa-comment"></i>
-              </div> */}
+                    <span className='funder'>{item['contact']?.name}</span>
                   </div>
                 </div>
               </Link>
@@ -179,10 +200,10 @@ const Home = () => {
       </div>
       <hr style={{ marginTop: '50px' }} />
 
-      <h1 className='outb' style={{textDecoration:'underline'}}>Farmer experience</h1>
+      <h1 className='outb' style={{ textDecoration: 'underline' }}>Farmer experience</h1>
       <div className="aboutfarmer">
         {
-          farmer.map((ele) => (
+          farmer?.map((ele) => (
             <>
               <div className="info">
                 <img src={ele.image_url} alt="" />
@@ -209,10 +230,10 @@ const Home = () => {
         </div> */}
       </div>
       <hr />
-      <h1 className='outb' style={{textDecoration:'underline'}}>Donor's experience</h1>
+      <h1 className='outb' style={{ textDecoration: 'underline' }}>Donor's experience</h1>
       <div className="aboutfarmer">
         {
-          donor.map((ele) => (
+          donor?.map((ele) => (
             <>
               <div className="info">
                 <img src={ele.image_url} alt="" />
