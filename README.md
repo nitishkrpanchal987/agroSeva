@@ -27,7 +27,7 @@ repo for app code : https://github.com/RahulSoni0/AgroSeva
 - Used Material 3 UI
 
 - Website
-- React.js ,Firebase and Local storage
+- React.js ,Node.js, Firebase and Local storage
 
 ## Screenshots 
 
